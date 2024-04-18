@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-divs">
+            <div class="logo">
+                <h1><span id="logo">DEV</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" >About</a></li>
+                <li><a href="#skills" >Skills</a></li>
+                <li><a href="#projects" >Projects</a></li>
+                <li><a href="#personal-info" >Personal Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Other sections -->
+    <section id="about"> 
+      <div class="about-text">
+          <h1 class="heading-text">About</h1>
+          <div class="bubbles-container">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+          </div>
+          <h2 id="name">Badal Patel</h2>
+          <h2>Software Engineering</h2>
+          <div class="container">
+            <p id="text-container" class="typing-animation" ></p>
+          </div>
+      </div>
+      <div class="about-image">
+          <img src="./asits/p1.jpg" alt="Your Image">
+      </div>
+  </section>
+  
+  
+    <section id="skills">
+        <div class="button-container1">
+            <div class="ball-container1">
+              <div class="ball1"></div>
+              <div class="ball1"></div>
+            </div>
+          </div>
+        <h1 class="heading-text">skills</h1>
+        <div class="skills-container " id="skills">
+            <div class="card"  onclick="animateTyping('languages')">
+                <h2 class="card-title heading-text">Languages</h2>
+                <ul class="card-list hidden" id="languages">
+                    <li><span class="skill">HTML</span><span class="expertise-level">Advanced</span></li>
+                    <li><span class="skill">CSS</span><span class="expertise-level">Advanced</span></li>
+                    <li><span class="skill">JavaScript</span><span class="expertise-level">Advanced</span></li>
+                    <li><span class="skill">SQL</span><span class="expertise-level">Intermediate</span></li>
+                </ul>
+            </div>
+            <div class="card" onclick="animateTyping('libraries')" >
+                <h2 class="card-title heading-text">Libraries/ Frameworks</h2>
+                <ul class="card-list hidden" id="libraries">
+                    <li><span class="skill">React.js</span><span class="expertise-level">Advanced</span></li>
+                    <li><span class="skill">Tailwind CSS</span><span class="expertise-level">Advanced</span></li>
+                    
+                    <li><span class="skill">Bootstrap</span><span class="expertise-level">Intermediate</span></li>
+                </ul>
+            </div>
+            <div class="card" onclick="animateTyping('Others')" >
+                <h2 class="card-title heading-text">Other Skills</h2>
+                <ul class="card-list hidden" id="Others">
+                    <li><span class="skill">MongoDB</span><span class="expertise-level">Intermediate</span></li>
+                    <li><span class="skill">Git & Github</span><span class="expertise-level">Intermediate</span></li>
+                    <li><span class="skill">MsOffice & MsExcel</span><span class="expertise-level">Intermediate</span></li>
+                    <li><span class="skill">Good communication skills</span></li>
+                    <li><span class="skill">Photo Editing Light-Room</span></li>
+                </ul>
+            </div>
+            </div>
+    </section>
+ 
+    <section id="projects">
+      <h1 class="heading-text">Projects</h1>
+      <div class="project-section">
+        <div class="projects-wrapper">
+          <div class="project">
+            <img src="./asits/snakegameIMG.jpeg" alt="Project 1">
+            <div class="project-content">
+              <h3 class="project-title">Snake Game</h3>
+              <p class="project-desc">
+
+                1. Snake game with variable speed and control options, including keyboard and mouse controls.
+                <br>
+                2. Features include score tracking, difficulty levels, sound effects, and a game over screen.
+                <br>
+                3. Additional elements like power-ups, obstacles, and animations enhance gameplay complexity.
+                <br>
+                4. Customizable settings, mobile responsiveness, and multiplayer mode offer a diverse gaming experience.</p>
+              <h3>Live Link : <a href="https://codebadal.github.io/snakeGame-js/" class="link" target="_blank">https://codebadal.github.io/snakeGame-js/</a></h3>
+              <h3>source Link : <a class="link" href="https://github.com/codebadal/snakeGame-js.git" target="_blank">https://github.com/codebadal/snakeGame-js.git</a></h3>
+              
+              <p ><h3>Technologies Used: <span class="tech-used">HTML, CSS, JavaScript, Game Logic, DOM Manipulation, Event Handling.</span></h3> </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./asits/musicAppImg.jpg" alt="musicAppImg">
+            <div class="project-content">
+              <h3 class="project-title">Music player</h3>
+              <p class="project-desc">
+                1. Plays audio tracks with play, pause, next, and back buttons. <br>
+                2. Displays current song details like name and duration. <br>
+                3. Includes a progress bar for tracking playback time. <br>
+                4. Allows users to click on individual songs to play them directly.
+               </p>
+              <h3>Live Link : <a href="https://codebadal.github.io/spotify-clone/" class="link" target="_blank">https://codebadal.github.io/spotify-clone/</a></h3>
+              <h3>source Link : <a class="link" href="https://github.com/codebadal/spotify-clone.git" target="_blank">https://github.com/codebadal/spotify-clone.git</a></h3>
+              
+              <p ><h3>Technologies Used: <span class="tech-used">HTML, CSS, JavaScript.</span></h3> </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./asits/NFTpageimg.png" alt="NFTpage">
+            <div class="project-content">
+              <h3 class="project-title">NFT PAGE</h3>
+              <p class="project-desc">
+                1. Visual Elements: Incorporates gradient backgrounds, images, icons, and buttons to enhance visual appeal. <br>
+                2. Responsive Design: The page is designed to be responsive, adjusting its layout and content based on the device's screen size. <br>
+                3. Navigation Menu: Includes links to sections like "Marketplace," "About," "Resources," and "FAQ." <br>
+                4. Information Sections: Provides sections for showcasing NFT collections, describing services, and guiding users on how to create and sell NFTs.
+               </p>
+              <h3>Live Link : <a href="https://codebadal.github.io/pro-4-tailwind--NFT-page/" class="link" target="_blank">https://codebadal.github.io/pro-4-tailwind--NFT-page/</a></h3>
+              <h3>source Link : <a class="link" href="https://github.com/codebadal/pro-4-tailwind--NFT-page.git" target="_blank">https://github.com/codebadal/pro-4-tailwind--NFT-page.git</a></h3>
+              
+              <p ><h3>Technologies Used: <span class="tech-used">HTML, CSS, Tailwind-CSS.</span></h3> </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./asits/pokemonapiIMG.png" alt="pokemonAPI">
+            <div class="project-content">
+              <h3 class="project-title">POKEMON PAGE</h3>
+              <p class="project-desc">
+                1. Pokémon Index: Display a list of Pokémon with navigation buttons for pagination. <br>
+                2. Pokémon Details: Show detailed information about a selected Pokémon, including its name, image, height, weight, and status. <br>
+                3. Search Functionality with Delay: Allow users to search for specific Pokémon by name, with a debouncing mechanism (`UseDebounce`) to reduce server load and delay requests. <br>
+                4. Routing: Use React Router for seamless navigation between the Pokémon index and details pages within the application.
+               </p>
+              <h3>Live Link : <a href=" https://codebadal.github.io/pokemonapi/" class="link" target="_blank">https://codebadal.github.io/pokemonapi/</a></h3>
+              <h3>source Link : <a class="link" href="https://github.com/codebadal/pokemonapi.git" target="_blank">https://github.com/codebadal/pokemonapi.git</a></h3>
+              
+              <p ><h3>Technologies Used: <span class="tech-used">ReactJS , CSS, React-Router-Dom, Axios</span></h3> </p>
+            </div>
+          </div>
+          <div class="project hide">
+            <img src="./asits/calculaterAPPimg.jpg" alt="pokemonAPI">
+            <div class="project-content">
+              <h3 class="project-title">Calculator</h3>
+              <p class="project-desc">
+                1 The code sets up an event listener for buttons with the class `.button`, enabling interaction with a calculator-like interface. <br>
+                2 It includes error handling for syntax errors and dynamically changes the background color of a specified element based on the evaluated result. <br>
+                3 It tracks user input and updates an input string accordingly, handling mathematical expressions and operations.
+               </p>
+              <h3>Live Link : <a href="https://codebadal.github.io/calculator-js/" class="link" target="_blank">https://codebadal.github.io/calculator-js/</a></h3>
+              <h3>source Link : <a class="link" href="https://github.com/codebadal/calculator-js.git" target="_blank">https://github.com/codebadal/calculator-js.git</a></h3>
+              
+              <p ><h3>Technologies Used: <span class="tech-used">JavaScript, HTML, CSS</span></h3> </p>
+            </div>
+          </div>
+          <div class="project hide">
+            <img src="./asits/bikePageIMG.png" alt="bikePageIMG">
+            <div class="project-content">
+              <h3 class="project-title">BIKE LANDING PAGE</h3>
+              <p class="project-desc">
+                1. Responsive Design: Utilizes meta tags and CSS classes for responsive layout and optimal viewing across different devices. <br>
+
+              2. Styling with CSS: Incorporates CSS classes like flex, bg-white, text-lg for consistent styling and visual appeal. <br>
+
+              3. Image Integration: Includes various image assets within img tags for logos, product visuals, icons, and background elements. <br>
+
+              4. Semantic HTML: Implements semantic HTML elements such as header, nav, main, section, footer for structural organization and accessibility.
+               </p>
+              <h3>Live Link : <a href="https://codebadal.github.io/3-bikeLandingPg-tailwind/" class="link" target="_blank">https://codebadal.github.io/3-bikeLandingPg-tailwind/</a></h3>
+              <h3>source Link : <a class="link" href="https://github.com/codebadal/3-bikeLandingPg-tailwind.git" target="_blank">https://github.com/codebadal/3-bikeLandingPg-tailwind.git</a></h3>
+              
+              <p ><h3>Technologies Used: <span class="tech-used">HTML, Tailwind-CSS, Semantic HTML</span></h3> </p>
+            </div>
+          </div>
+         
+          <!-- more projects -->
+
+        </div>
+        <div class="button-container1 center-btn">
+          <button class="view-all-btn btn" onclick="showAllProjects()">View All Projects</button>
+      </div>
+              <div class="button-container1">
+          <div class="ball-container">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+          </div>
+        </div>
+    </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="personal-info">
+      
+        
+        <div class="contact-info">
+          <h2 class="heading-text">Contact Information</h2>
+          <ul>
+            <li >Name: <span class="badal">Badal Patel</span></li>
+            
+            <!-- Add more personal info as needed -->
+          </ul>
+            <div class="contact-item">
+              <span class="icon"><img src="./asits/png-place-9.png" alt="City" width="30" height="30"></span>
+              <span>Indore, Madhya Pradesh</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon"><img src="./asits/Linkedin-logo-1024x1024.png" alt="LinkedIn" width="30" height="30"></span>
+                <a href="https://www.linkedin.com/in/codebadal/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <span class="icon"><img src="./asits/github_PNG28.png" alt="GitHub" width="30" height="30"></span>
+                <a href="https://github.com/codebadal" target="_blank">GitHub</a>
+            </div>
+            <div class="contact-item">
+                <span class="icon"><img src="./asits/email_PNG100751.png" alt="Email" width="30" height="30"></span>
+                <a href="mailto:patelbadal982675@gmail.com">patelbadal982675@gmail.com</a>
+            </div>
+            
+        </div>
+        
+    </section>
+    <button class="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
